@@ -7,7 +7,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
     height: 100vh;
-    background: url(https://source.unsplash.com/1600x900/?azadi,tehran);
+    background: url(https://source.unsplash.com/1920x1080/?tehran);
     background-size: cover;
 }
 ::-webkit-scrollbar {
@@ -50,7 +50,6 @@ body{
 .show-weather-c{
     height:auto;
     display: grid;
-    grid-template-columns: auto auto;
     overflow-y: scroll;
     justify-items: center;
     padding: 20px;
@@ -112,7 +111,7 @@ font-size: 18px;
   z-index: 1;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.8px);
