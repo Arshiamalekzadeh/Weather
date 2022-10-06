@@ -1,0 +1,221 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background: url(https://source.unsplash.com/1600x900/?azadi,tehran);
+    background-size: cover;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.day{
+    height: 200px;
+    width: 200px;
+    background-color:rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.info{
+    display: flex;
+    color: white;
+    font-size: 64px;
+    font-weight: 500;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 45px;
+}
+.display{
+ 
+}
+/* .ggh{
+    display: inline-block;
+} */
+.time , .name{
+    background-color:rgba(0, 0, 0, 0.3);
+    height: max-content;
+    padding: 10px;
+}
+.texxt{
+    position: relative;
+    bottom: 10px;
+}
+#date{
+    display: block;
+    font-size: 14px;
+}
+.show-weather-c{
+    height:auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow-y: scroll;
+    justify-items: center;
+    padding: 20px;
+    align-content: center;
+}
+.show-weather{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    align-items: center;
+    padding: 20px;
+}
+.all{
+    max-height: 300px;
+    overflow: scroll;
+    position: fixed;
+    bottom: 0px;
+    background-color:#FCF8F5;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px ;
+}
+.info-show{
+    margin:10px;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    border: 3.1px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 8px 13px 16px rgba(255,251,248,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 8px 13px 16px rgba(255,251,248,0);
+}
+hr{
+    width: 70%;
+    text-align: center;
+    height: 2px;
+    background-color: blue;
+    margin: 10px 0px 10px 0px;
+}
+.text{
+font-size: 18px;
+}
+.icon{
+
+}
+.text-D{
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+/*side bar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+form{
+    display: flex;
+    position: relative;
+    top: 40%;
+    left: 5%;
+}
+form input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.24);
+}
+form button{
+    background:rgba(255, 255, 255, 0.24);
+    border: none;
+
+}
+form button img{
+   height: 24px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: black;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.Logo img{height: 80px;margin-top: -10px;}
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 9px 15px;
+  border: none;
+  height: 50px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/*end */
+.list-view{
+    display: none;
+    margin: 10px 0px -17px 0px;
+    justify-content: center;
+}
+.list-view button {
+    background-color: #FCF8F5;
+    border: none;
+    margin-right: 9px;
+    cursor: pointer;
+}
+.list-view button img{
+    height: 38px;
+}
+label{
+    margin: 8px;
+}
+@media only screen and (min-width:769px) and (max-width: 1025px){
+    .info{font-size:50px;font-weight:400;padding: 40px;}.text{font-size: 16px;}
+    .info-show{min-width: 200px;min-height: 200px;}
+}
+@media all and (max-width: 768px){
+    .list-view{display: flex;}
+    .info{display: grid;font-size: 40px;font-weight: 400;padding: 40px;}
+    #date{font-size: 10px;}
+    .text{font-size: 16px;}
+    .info-show{min-width: 200px;min-height: 200px;}
+    .text-D{font-size: 22px;font-weight: 500;margin-bottom: 10px;}
+    .sidebar{padding-top: 15px;}
+    .sidebar a{font-size: 18px;}
+}
